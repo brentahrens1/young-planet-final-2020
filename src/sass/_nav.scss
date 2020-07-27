@@ -8,6 +8,17 @@ $mobile: 700px;
 $tablet: 1000px;
 $desktop: 1001px;
 
+@mixin after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2.5px;
+    position: absolute;
+    bottom: -.3rem;
+    background: #fff;
+    transition: width .30s ease-in-out;
+}
+
 .nav {
     width: 100%;
     position: fixed;
@@ -40,6 +51,18 @@ $desktop: 1001px;
         a:link, a:visited {
             color: $font-color-primary;
             font-size: $font-size;
+        }
+
+        .nav__list-item {
+            position: relative;
+
+            &::after {
+                @include after;
+            }
+
+            &:hover::after {
+                width: 100%
+            }
         }
     }
 }
@@ -119,7 +142,17 @@ $desktop: 1001px;
             text-transform: uppercase;
         }
 
-        
+        .overlay__list-item {
+            position: relative;
+
+            &::after {
+                @include after;
+            }
+
+            &:hover::after {
+                width: 100%
+            }
+        }
     }
 }
 
@@ -130,5 +163,10 @@ $desktop: 1001px;
 
     .nav__list {
         display: none;
+    }
+
+    .nav__logo {
+        width: 10rem;
+        margin-left: 0;
     }
 }
