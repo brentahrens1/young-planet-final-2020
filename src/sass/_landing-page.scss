@@ -7,6 +7,10 @@
     background: blue;
     z-index: 1000;
 
+    &.hide {
+        display: none;
+    }
+
     &__content {
         position: absolute;
         top: 50%;

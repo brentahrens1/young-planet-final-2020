@@ -2,8 +2,10 @@ import React, { useState } from 'react'
 import '../../sass/_landing-page.scss'
 
 const LandingPage = () => {
+    const [ close, doClose ] = useState(false)
+
     return (
-        <div className="landing">
+        <div className={`landing ${close ? "hide" : "show"}`} onClick={() => doClose(!close)}>
             <div className="close">
                 <div className="close__bar" />
                 <div className="close__bar" />
