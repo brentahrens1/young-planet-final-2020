@@ -3,6 +3,10 @@ $background-color: #000;
 $font-size: 1.1rem;
 $padding: 1rem;
 
+$mobile: 700px;
+$tablet: 1000px;
+$desktop: 1001px;
+
 .nav {
     width: 100%;
     position: fixed;
@@ -37,8 +41,58 @@ $padding: 1rem;
             font-size: $font-size;
         }
     }
+}
 
+.hamburger {
+    display: none;
+    width: 45px;
+    height: 28px;
+    position: relative;
+    cursor: pointer;
+    z-index: 999;
+
+    &__bar {
+        position: absolute;
+        width: 40px;
+        height: 3px;
+        background: $font-color-primary;
+        left: 0;
+
+        &:nth-child(1) {
+            top: 0;
+        }
+        &:nth-child(1) {
+            top: 10px;
+        }
+        &:nth-child(2) {
+            top: 20px;
+        }
+        .open > & {
+            transition: all 1s ease-in-out;
+        }
+        .open > &:first-child {
+            top: 45%;
+            transform: rotate(135deg);
+            transition: all .50s ease-in-out;
+        }
+        .open > &:nth-child(2) {
+            opacity: 0;
+            left: -60px;
+            transition: all .50s ease-in-out;
+        }
+        .open > &:nth-child(3) {
+            transform: rotate(-135deg);
+            transition: all .50s ease-in-out;
+        }
+    }
+}
+
+@media (max-width: $tablet) {
     .hamburger {
-        
+        display: block;
+    }
+
+    .nav__list {
+        display: none;
     }
 }
