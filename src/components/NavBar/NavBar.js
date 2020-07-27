@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom'
 import NavLogo from "../../images/logos/black-logo-second.jpg"
 
 const NavBar = () => {
+    const [ isOpen, setIsOpen ] = useState(false)
+
     return(
         <div className="nav">
             <div className="nav__logo">
@@ -16,10 +18,18 @@ const NavBar = () => {
                 <Link to="/gallery"><li className="nav__list-item">Gallery</li></Link>
                 <Link to="/contact"><li className="nav__list-item">Contact</li></Link>
             </ul>
-            <div className="hamburger">
+            <div className={`hamburger ${isOpen ? "open" : "closed"}`} onClick={() => setIsOpen(!isOpen)}>
                 <div className="hamburger__bar" />
                 <div className="hamburger__bar" />
                 <div className="hamburger__bar" />
+            </div>
+            <div className={`overlay ${isOpen ? "show" : "hide"}`}>
+                <ul className="overlay__list">
+                    <Link to="/"><li className="overlay__list-item">Home</li></Link>
+                    <Link to="/music"><li className="overlay__list-item">Music</li></Link>
+                    <Link to="/gallery"><li className="overlay__list-item">Gallery</li></Link>
+                    <Link to="/contact"><li className="overlay__list-item">Contact</li></Link>                    
+                </ul>
             </div>
         </div>
     )
