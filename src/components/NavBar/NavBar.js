@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import '../../sass/nav.scss'
+import '../../sass/_nav.scss'
 import { Link } from 'react-router-dom'
 
 import NavLogo from "../../images/logos/black-logo-second.jpg"
@@ -16,6 +16,11 @@ const NavBar = () => {
                 <Link to="/gallery"><li className="nav__list-item">Gallery</li></Link>
                 <Link to="/contact"><li className="nav__list-item">Contact</li></Link>
             </ul>
+            <div className="hamburger">
+                <div className="hamburger__bar" />
+                <div className="hamburger__bar" />
+                <div className="hamburger__bar" />
+            </div>
         </div>
     )
 }
