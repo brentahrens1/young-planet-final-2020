@@ -1,0 +1,52 @@
+.home {
+    margin-top: 6rem;
+    height: 100vh;
+    perspective: 2px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: #fff;
+
+    &__section {
+        height: 100vh;
+        position: relative;
+    }
+
+    &__static {
+        height: 70vh;
+        background: orange;
+
+        h1 {
+            margin: 0;
+        }
+    }
+
+    &__parallax::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        transform: translateZ(-1px) scale(1.5);
+        background-size: 100%;
+        z-index: -1;
+    }
+
+    &__banner1::after {
+        background-image: url('../images/banners/banner1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    &__banner2::after {
+        background-image: url('../images/banners/banner2.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    &__banner3::after {
+        background-image: url('../images/banners/banner3.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
