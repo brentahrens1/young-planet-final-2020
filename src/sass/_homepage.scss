@@ -4,7 +4,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-    padding: 3rem;
+    padding: 2rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -13,8 +13,8 @@
 }
 
 .home {
-    margin-top: 4rem;
     height: 100vh;
+    margin-top: 2rem;
     perspective: 2px;
     overflow-x: hidden;
     overflow-y: auto;
@@ -79,7 +79,6 @@
         }
 
         .home__static-image {
-            width: 27%;
             max-width: 380px;
             min-width: 330px;
 
@@ -96,7 +95,7 @@
         right: 0;
         bottom: 0;
         left: 0;
-        transform: translateZ(-1px) scale(1.5);
+        transform: translateZ(-1px) scale(1.7);
         background-size: 100%;
         background-position: center;
         background-repeat: no-repeat;
@@ -117,7 +116,7 @@
     }
 
     &__video {
-        @include static();
+        @include static;
 
         .video-container {
             overflow: hidden;
@@ -150,7 +149,7 @@
 }
 
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
 
     .home__static .home__static-content {
         width: 95%;
