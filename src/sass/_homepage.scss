@@ -1,3 +1,17 @@
+@mixin static {
+    width: 100%;
+    background-image: url('../images/background/grey-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .home {
     margin-top: 4rem;
     height: 100vh;
@@ -7,22 +21,12 @@
     background: #fff;
 
     &__section {
-        height: 85vh;
+        height: 680px;
         position: relative;
     }
 
     &__static {
-        height: 60vh;
-        background-image: url('../images/background/grey-background.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        text-align: center;
-        padding: 1rem;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
+        @include static;
 
         .home__static-content {
             width: 40%;
@@ -76,7 +80,7 @@
 
         .home__static-image {
             width: 27%;
-            max-width: 400px;
+            max-width: 380px;
             min-width: 330px;
 
             img {
@@ -113,17 +117,7 @@
     }
 
     &__video {
-        height: 60vh;
-        background-image: url('../images/background/grey-background.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        text-align: center;
-        padding: 1rem;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
+        @include static();
 
         .video-container {
             overflow: hidden;
@@ -155,19 +149,25 @@
     }
 }
 
-@media (max-height: 600px) {
 
-    .home__static-image {
-        display: none;
+@media (max-width: 700px) {
+
+    .home__static .home__static-content {
+        width: 95%;
+        margin: 0;
     }
-}
 
-@media (max-width: 600px) {
-    .home__static {
-        height: 100vh;
+    .home__video {
+        display: flex;
+        flex-direction: column;
+    }
 
-        .home__static-content {
-            margin-left: 0;
-        }
+    .home__video .video-container {
+        width: 100%;
+        margin: 0;
+    }
+
+    .home__video .video-container:nth-child(1) {
+        margin-bottom: 1.5rem;
     }
 }
