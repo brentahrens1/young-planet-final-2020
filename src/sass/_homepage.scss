@@ -12,11 +12,45 @@
     }
 
     &__static {
-        height: 70vh;
-        background: #fff;
+        height: 60vh;
+        background-image: url('../images/background/grey-background.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        padding: 1rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
 
-        h1 {
-            margin: 0;
+        .home__static-content {
+            width: 40%;
+            margin-left: 2rem;
+
+            h2 {
+                text-transform: uppercase;
+            }
+
+            button {
+                width: 12rem;
+                background: transparent;
+                border: 3px solid #000;
+                font-size: 1.1rem;
+                font-weight: 700;
+                padding: .5rem;
+                text-transform: uppercase;
+            }
+        }
+
+        .home__static-image {
+            width: 27%;
+            max-width: 400px;
+            min-width: 330px;
+
+            img {
+                width: 100%;
+            }
         }
     }
 
@@ -29,24 +63,38 @@
         left: 0;
         transform: translateZ(-1px) scale(1.5);
         background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         z-index: -1;
     }
 
     &__banner1::after {
         background-image: url('../images/banners/banner1.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
     }
     
     &__banner2::after {
         background-image: url('../images/banners/banner2.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
     }
     
     &__banner3::after {
         background-image: url('../images/banners/banner3.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
+    }
+}
+
+@media (max-height: 600px) {
+
+    .home__static-image {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .home__static {
+        height: 90vh;
+
+        .home__static-content {
+            margin-left: 0;
+        }
     }
 }
