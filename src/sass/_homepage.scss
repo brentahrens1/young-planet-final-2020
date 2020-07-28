@@ -121,11 +121,11 @@
         .video-container {
             overflow: hidden;
             position: relative;
-            width:45%;
+            width:47%;
         }
         
         .video-container::after {
-            padding-top: 56.25%;
+            padding-top: 64.25%;
             display: block;
             content: '';
         }
