@@ -13,9 +13,9 @@ const Homepage = () => {
                     <img src={Orare} alt="Young Planet x Downtown Dawson - Orare" />
                 </div>
                 <div className="home__static-content">
-                    <h2>Latest Release</h2>
+                    <h1>Latest Release</h1>
                     <h4>Available now on all platforms for stream / download</h4>
-                    <button>Listen Now</button>
+                    <h2><a href="#">Listen Now</a></h2>
                 </div>
             </div>
             <div className="home__section home__parallax home__banner2" />

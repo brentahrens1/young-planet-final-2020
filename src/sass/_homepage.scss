@@ -28,18 +28,49 @@
             width: 40%;
             margin-left: 2rem;
 
-            h2 {
+            h1 {
                 text-transform: uppercase;
             }
 
-            button {
+            a:link, a:visited {
+                z-index: 999;
+                position: relative;
+                display: block;
+                color: #000;
+                padding: .5rem;
+                transition: all 200ms ease-in-out;
+            }
+
+            a:link:hover, a:visited:hover {
+                color: #fff;
+            }
+
+            h2 {
                 width: 12rem;
                 background: transparent;
                 border: 3px solid #000;
                 font-size: 1.1rem;
                 font-weight: 700;
-                padding: .5rem;
                 text-transform: uppercase;
+                position: relative;
+                margin: 0 auto;
+                z-index: 999;
+
+                &::after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 0;
+                    height: 100%;
+                    background: #000;
+                    transition: all 200ms ease-in-out;
+                }
+
+                &:hover::after {
+                    width: 100%;
+                }
             }
         }
 
