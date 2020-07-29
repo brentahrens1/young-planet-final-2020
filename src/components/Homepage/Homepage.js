@@ -3,6 +3,7 @@ import '../../sass/_homepage.scss'
 
 
 import Orare from '../../images/covers/orare.jpg'
+import Merch from '../../images/merch/merch.JPG'
 
 const Homepage = () => {
     return (
@@ -28,6 +29,16 @@ const Homepage = () => {
                 </div>
             </div>
             <div className="home__section home__parallax home__banner3"></div>
+            <div className="home__static">
+                <div class="home__static-image">
+                    <img src={Merch} alt="Young Planet x Downtown Dawson - Orare" />
+                </div>
+                <div className="home__static-content">
+                    <h1>Online Store</h1>
+                    <h4>Available soon.</h4>
+                    <h2><a href="#">Contact</a></h2>
+                </div>
+            </div>
         </div>
     )
 }
