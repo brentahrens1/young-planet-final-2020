@@ -29,10 +29,12 @@
 
         .list1 {
             margin-right: 1.5rem;
+            margin-bottom: 0;
         }
 
         .list2 {
             margin-left: 1.5rem;
+            margin-bottom: 0;
         }
 
         .footer__list-item {
@@ -51,11 +53,13 @@
         flex-direction: column;
 
         h1 {
-            margin: 0;
+            margin-top: 10px;
+            margin-bottom: 5px;
         }
 
         h2 {
             font-size: 1.2rem;
+            margin: 0;
         }
 
         a:link, a:visited {
@@ -67,5 +71,9 @@
 @media (max-width: 800px) {
     .footer {
         flex-direction: column;
+
+        &__contact {
+            margin-top: 2rem;
+        }
     }
 }
