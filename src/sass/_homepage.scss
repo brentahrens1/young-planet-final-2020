@@ -123,6 +123,7 @@
     
     &__banner2::after {
         background-image: url('../images/banners/banner2.jpg');
+        transform: translateZ(-1px) scale(2);
     }
     
     &__banner3::after {
