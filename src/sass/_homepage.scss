@@ -166,6 +166,28 @@
 
 @media (max-width: 750px) {
 
+    .home__parallax::after {
+        display: none;
+    }
+
+    .home__banner2, .home__banner3 {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .home__banner1 {
+        display: none;
+    }
+    
+    .home__banner2 {
+        background-image: url('../images/banners/banner2.jpg');
+    }
+    
+    .home__banner3 {
+        background-image: url('../images/banners/banner3.jpg');
+    }
+
     .home__static .home__static-content {
         width: 95%;
         margin: 0;
