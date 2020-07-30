@@ -12,9 +12,6 @@ function App() {
       <NavBar />
       <Homepage />
       <LandingPage />
-      <div id="footer">
-        <Footer />
-      </div>
     </div>
   );
 }

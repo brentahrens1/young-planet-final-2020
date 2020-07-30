@@ -14,15 +14,28 @@
 
 .home {
     height: 100vh;
-    margin-top: 2rem;
+    margin-top: 7rem;
     perspective: 2px;
     overflow-x: hidden;
     overflow-y: auto;
-    background: #fff;
+    background: #000;
 
     &__section {
-        height: 680px;
+        width: 100%;
+        display: block;
         position: relative;
+    }
+
+    &__banner1 {
+        height: 100vh;
+    }
+
+    &__banner2 {
+        height: 70vh;
+    }
+
+    &__banner3 {
+        height: 70vh;
     }
 
     &__static {
@@ -95,6 +108,7 @@
         right: 0;
         bottom: 0;
         left: 0;
+        display: block;
         transform: translateZ(-1px) scale(1.6);
         background-size: 100%;
         background-position: center;
