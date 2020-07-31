@@ -36,9 +36,9 @@ const Music = () => {
                                 albumLinkRoutes.map((route, idx) => 
                                 <div className={showAlbum ? "music__album-links" : "hide"}>
                                     <ul>
-                                        <li><a href={route.apple}>Apple Music</a></li>
-                                        <li><a href={route.spotify}>Spotify</a></li>
-                                        <li><a href={route.soundcloud}>Soundcloud</a></li>
+                                        <li><a href={route.apple} target="_blank">Apple Music</a></li>
+                                        <li><a href={route.spotify} target="_blank">Spotify</a></li>
+                                        <li><a href={route.soundcloud} target="_blank">Soundcloud</a></li>
                                     </ul>
                                 </div>     
                                 )
@@ -58,7 +58,7 @@ const Music = () => {
                                 singleLinkRoutes.map((route, idx) => 
                                 <div className={showSingle ? "music__single-links" : "hide"}>
                                     <ul>
-                                        <li><a href={route.soundcloud}>Soundcloud</a></li>
+                                        <li><a href={route.soundcloud} target="_blank">Soundcloud</a></li>
                                     </ul>
                                 </div>     
                                 )
