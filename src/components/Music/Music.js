@@ -3,6 +3,8 @@ import '../../sass/_music.scss'
 
 import { albumRoutes } from '../../const/albumRoutes'
 import { singleRoutes } from '../../const/singleRoutes'
+import { singleLinkRoutes } from '../../const/singleLinkRoutes'
+import { albumLinkRoutes } from '../../const/albumLinkRoutes'
 
 const Music = () => {
     const [ showAlbum, setShowAlbum ] = useState(true)
@@ -28,7 +30,20 @@ const Music = () => {
             {
                 albumRoutes.map((route, idx) => 
                 <div className={showAlbum ? "music__album-covers" : "hide"}>
-                    <img src={route.img} alit={route.title} />
+                    <img key={idx} src={route.img} alit={route.title} />
+                        <div>
+                            {
+                                albumLinkRoutes.map((route, idx) => 
+                                <div className={showAlbum ? "music__album-links" : "hide"}>
+                                    <ul>
+                                        <li><a href={route.apple}>Apple Music</a></li>
+                                        <li><a href={route.spotify}>Spotify</a></li>
+                                        <li><a href={route.soundcloud}>Soundcloud</a></li>
+                                    </ul>
+                                </div>     
+                                )
+                            }
+                        </div>
                 </div>
                 )
             }
@@ -36,9 +51,20 @@ const Music = () => {
             <div className="music__grid">
             {
                 singleRoutes.map((route, idx) => 
-                <div className={showSingle ? "music__single-covers" : "hide"}>
-                    <img src={route.img} alit={route.title} />
-                </div>
+                    <div className={showSingle ? "music__single-covers" : "hide"}>
+                        <img key={idx} src={route.img} alit={route.title} />
+                        <div>
+                            {
+                                singleLinkRoutes.map((route, idx) => 
+                                <div className={showSingle ? "music__single-links" : "hide"}>
+                                    <ul>
+                                        <li><a href={route.soundcloud}>Soundcloud</a></li>
+                                    </ul>
+                                </div>     
+                                )
+                            }
+                        </div>
+                    </div>
                 )
             }
             </div>

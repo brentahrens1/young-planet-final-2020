@@ -46,7 +46,38 @@
     }
 
     &__album-covers, &__single-covers {
+        position: relative;
         animation: fade 650ms ease-in-out;
+    }
+
+    &__album-links, &__single-links {
+        width: 0;
+        opacity: 0;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        background: rgba(0,0,0,0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        transition: all 300ms ease-in-out;
+
+        li {
+            margin-bottom: .5rem;
+        }
+
+        a:link, a:visited {
+            color: #fff;
+        }
+    }
+
+    &__album-covers:hover &__album-links, &__single-covers:hover &__single-links {
+        width: 100%;
+        opacity: 1;
     }
 
 }
