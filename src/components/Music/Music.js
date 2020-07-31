@@ -21,8 +21,8 @@ const Music = () => {
     return (
         <div className="music">
             <div className="music__toggle">
-                <h1 onClick={handleAlbum} className={showAlbum ? "music__album-covers" : ""}>Albums</h1>
-                <h1 onClick={handleSingle} className={showSingle ? "music__single-covers" : ""}>Singles</h1>
+                <h1 onClick={handleAlbum} className={showAlbum ? "music__nav-active" : ""}>Albums</h1>
+                <h1 onClick={handleSingle} className={showSingle ? "music__nav-active" : ""}>Singles</h1>
             </div>
             <div className="music__grid">
             {
