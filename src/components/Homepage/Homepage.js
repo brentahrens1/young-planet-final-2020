@@ -2,7 +2,7 @@ import React from 'react'
 import '../../sass/_homepage.scss'
 
 
-import Orare from '../../images/covers/orare.jpg'
+import Orare from '../../images/covers/albums/orare.jpg'
 import Merch from '../../images/merch/merch.JPG'
 
 const Homepage = () => {

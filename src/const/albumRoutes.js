@@ -1,10 +1,10 @@
-import orare from '../images/covers/orare.jpg'
-import aold from '../images/covers/aold.jpg'
-import snowOcean from '../images/covers/snow-ocean.jpg'
-import lcyhm from '../images/covers/lcyhm.png'
-import nfa from '../images/covers/nfa.jpg'
+import orare from '../images/covers/albums/orare.jpg'
+import aold from '../images/covers/albums/aold.jpg'
+import snowOcean from '../images/covers/albums/snow-ocean.jpg'
+import lcyhm from '../images/covers/albums/lcyhm.png'
+import nfa from '../images/covers/albums/nfa.jpg'
 
-export const routes = [
+export const albumRoutes = [
     {
         title: "Orare",
         img: orare

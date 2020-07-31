@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../../sass/_music.scss'
 
-import { routes } from '../../const/routes'
+import { albumRoutes } from '../../const/albumRoutes'
+import { singleRoutes } from '../../const/singleRoutes'
 
 const Music = () => {
+    const [ toggle, isToggle ] = useState(false)
     return (
         <div className="music">
             <div className="music__toggle">
@@ -12,8 +14,17 @@ const Music = () => {
             </div>
             <div className="music__grid">
             {
-                routes.map((route, idx) => 
-                <div className="music__covers">
+                albumRoutes.map((route, idx) => 
+                <div className="music__album-covers">
+                    <img src={route.img} alit={route.title} />
+                </div>
+                )
+            }
+            </div>
+            <div className="music__grid">
+            {
+                singleRoutes.map((route, idx) => 
+                <div className="music__single-covers">
                     <img src={route.img} alit={route.title} />
                 </div>
                 )
