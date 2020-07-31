@@ -20,21 +20,6 @@ export const albumLinkRoutes = [
         soundcloud: "#"
     },
     {
-        spotify: "#",
-        apple: "#",
-        soundcloud: "#"
-    },
-    {
-        spotify: "#",
-        apple: "#",
-        soundcloud: "#"
-    },
-    {
-        spotify: "#",
-        apple: "#",
-        soundcloud: "#"
-    },
-    {
         spotify: "https://open.spotify.com/album/4Cu7DRV91hM8jsdennnLKG?si=OV_YctnaTUG2Q6TrQUocTQ",
         apple: "https://music.apple.com/us/album/new-fast-automatic/1286930847",
         soundcloud: "https://soundcloud.com/spinyoungplanet/sets/new-fast-automatic"

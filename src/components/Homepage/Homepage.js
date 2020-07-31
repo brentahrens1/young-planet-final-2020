@@ -22,10 +22,10 @@ const Homepage = () => {
             <div className="home__section home__parallax home__banner2"></div>
             <div className="home__video">
                 <div class="video-container video-one">
-                    <iframe src="https://www.youtube.com/embed/QdxfZIarrC0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                    <iframe src="https://www.youtube.com/embed/QdxfZIarrC0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" title="Thought Police"></iframe>
                 </div>
                 <div class="video-container video-two">
-                    <iframe src="https://www.youtube.com/embed/7wwhUPkcJ3U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                    <iframe src="https://www.youtube.com/embed/7wwhUPkcJ3U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" title="Chosen Few"></iframe>
                 </div>
             </div>
             <div className="home__section home__parallax home__banner3"></div>
