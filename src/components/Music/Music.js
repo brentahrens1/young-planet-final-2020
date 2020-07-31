@@ -44,7 +44,7 @@ const Music = () => {
                 {
                     singleRoutes.map((route, idx) => 
                         <div className={showSingle ? "music__single-covers" : "hide"}>
-                            <img src={route.img} alt={route.title} />
+                            <img key={idx} src={route.img} alt={route.title} />
                             <div className={showSingle ? "music__single-links" : "hide"}>
                                 <ul>
                                     <li><a href={route.soundcloud} target="_blank" rel="noopener noreferrer">Soundcloud</a></li>
