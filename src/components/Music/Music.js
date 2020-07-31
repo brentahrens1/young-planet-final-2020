@@ -5,17 +5,29 @@ import { albumRoutes } from '../../const/albumRoutes'
 import { singleRoutes } from '../../const/singleRoutes'
 
 const Music = () => {
-    const [ toggle, isToggle ] = useState(false)
+    const [ showAlbum, setShowAlbum ] = useState(true)
+    const [ showSingle, setShowSingle ] = useState(false)
+
+    const handleAlbum = () => {
+        setShowSingle(false)
+        setShowAlbum(true)
+    }
+
+    const handleSingle = () => {
+        setShowAlbum(false)
+        setShowSingle(true)
+    }
+
     return (
         <div className="music">
             <div className="music__toggle">
-                <h1>Albums</h1>
-                <h1>Singles</h1>
+                <h1 onClick={handleAlbum} className={showAlbum ? "music__album-covers" : ""}>Albums</h1>
+                <h1 onClick={handleSingle} className={showSingle ? "music__single-covers" : ""}>Singles</h1>
             </div>
             <div className="music__grid">
             {
                 albumRoutes.map((route, idx) => 
-                <div className="music__album-covers">
+                <div className={showAlbum ? "music__album-covers" : "hide"}>
                     <img src={route.img} alit={route.title} />
                 </div>
                 )
@@ -24,7 +36,7 @@ const Music = () => {
             <div className="music__grid">
             {
                 singleRoutes.map((route, idx) => 
-                <div className="music__single-covers">
+                <div className={showSingle ? "music__single-covers" : "hide"}>
                     <img src={route.img} alit={route.title} />
                 </div>
                 )
