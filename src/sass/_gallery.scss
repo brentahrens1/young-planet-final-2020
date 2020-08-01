@@ -5,9 +5,11 @@
 
     &__grid {
         display: grid;
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat((6, 1fr));
         grid-template-rows: repeat(9, 100px);
-        width: 80vw;
+        width: 80%;
+        max-width: 1000px;
+        min-width: 700px;
         margin: 0 auto;
     }
     .one {
@@ -27,14 +29,18 @@
     }
     .four {
         grid-column: 5 / span 2;
-        grid-row: 4 / span 2;
+        grid-row: 5 / span 2;
         z-index: 2;
         transform: translateX(2rem);
+        transform: translateY(-1rem);
+        filter: grayscale(100%);
     }
     .five {
         grid-column: 3 / span 2;
-        grid-row: 5 / span 2;
+        grid-row: 6 / span 2;
         transform: translateY(3rem);
+        transform: translateX(3rem);
+        filter: grayscale(100%);
     }
     .six {
         grid-column: 5 / span 2;
@@ -44,6 +50,7 @@
         grid-column: 1 / span 2;
         grid-row: 4 / span 2;
         transform: translateY(-2rem);
+        filter: grayscale(100%);
     }
     .eight {
         grid-column: 4 / span 2;
@@ -55,12 +62,13 @@
         grid-row: 5 / span 1;
         z-index: 9;
         transform: translateX(2rem);
+        filter: grayscale(100%);
     }
 
     &__image {
+        transition: transform 500ms ease-in-out;
         img {
             width: 100%;
-            transition: transform 500ms ease-in-out;
         }
 
         &:hover {
