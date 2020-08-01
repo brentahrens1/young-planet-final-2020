@@ -8,6 +8,7 @@ import LandingPage from './components/LandingPage/LandingPage'
 import Homepage from './components/Homepage/Homepage'
 import Footer from './components/Footer/Footer'
 import Music from './components/Music/Music'
+import Gallery from './components/Gallery/Gallery'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Switch>
           <Route path="/" exact component={Homepage} />
           <Route path="/music" exact component={Music} />
+          <Route path="/gallery" exact component={Gallery} />
         </Switch>
       </div>
       <LandingPage />
