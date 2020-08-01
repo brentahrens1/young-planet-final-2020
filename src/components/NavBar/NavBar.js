@@ -26,10 +26,10 @@ const NavBar = () => {
             </div>
             <div className={`overlay ${isOpen ? "show" : "hide"}`}>
                 <ul className="overlay__list">
-                    <Link to="/"><li className="overlay__list-item">Home</li></Link>
-                    <Link to="/music"><li className="overlay__list-item">Music</li></Link>
-                    <Link to="/gallery"><li className="overlay__list-item">Gallery</li></Link>
-                    <Link to="/contact"><li className="overlay__list-item">Contact</li></Link>                    
+                    <Link onClick={() => setIsOpen(!isOpen)} to="/"><li className="overlay__list-item">Home</li></Link>
+                    <Link onClick={() => setIsOpen(!isOpen)} to="/music"><li className="overlay__list-item">Music</li></Link>
+                    <Link onClick={() => setIsOpen(!isOpen)} to="/gallery"><li className="overlay__list-item">Gallery</li></Link>
+                    <Link onClick={() => setIsOpen(!isOpen)} to="/contact"><li className="overlay__list-item">Contact</li></Link>                    
                 </ul>
             </div>
         </div>
