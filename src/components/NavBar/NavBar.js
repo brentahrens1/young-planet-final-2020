@@ -6,8 +6,9 @@ import NavLogo from "../../images/logos/black-logo-second.jpg"
 
 const NavBar = () => {
     const [ isOpen, setIsOpen ] = useState(false)
+    window.onresize = () => (window.innerWidth > 900 && isOpen) && setIsOpen(false)
 
-    return(
+    return (
         <div className="nav">
             <div className="nav__logo">
                 <Link to="/"><img src={NavLogo} alt="Young Planet Logo" /></Link>
