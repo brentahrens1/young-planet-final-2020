@@ -4,22 +4,83 @@
     position: fixed;
     top: 0;
     left: 0;
-    background: blue;
+    background-image: url('../images/background/texture.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     z-index: 1000;
 
     &.hide {
         display: none;
     }
 
+    &__cover {
+        width: 60%;
+        margin: 0 auto;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        button {
+            position: relative;
+            width: 15rem;
+            background: transparent;
+            border: 3px solid #000;
+            font-size: 1.3rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            z-index: 999;
+
+            a:link, a:visited {
+                color: #000;
+                display: block;
+                padding: .5rem;
+                position: relative;
+                z-index: 999;
+                transition: all 200ms ease-in-out;
+            }
+
+            a:link:hover, a:visited:hover {
+                color: #fff;
+            }
+
+            &::after {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 0;
+                height: 100%;
+                background: #000;
+                transition: all 200ms ease-in-out;
+            }
+
+            &:hover::after {
+                width: 100%;
+            }
+        }
+    }
+
     &__content {
+        width: 60vw;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
 
         h1 {
-            font-size: 2.5rem;
-            color: #fff;
+            font-size: 1.4rem;
+            text-align: center;
+            color: #000;
+            text-transform: uppercase;
         }
     }
 
@@ -27,8 +88,8 @@
         width: 45px;
         height: 40px;
         position: absolute;
-        top: 2rem;
-        right: 1rem;
+        top: 3rem;
+        right: 2rem;
         cursor: pointer;
 
         &__bar {
@@ -36,7 +97,7 @@
             left: 0;
             width: 40px;
             height: 3px;
-            background: #fff;
+            background: #000;
 
             &:nth-child(1) {
                 transform: rotate(45deg);
@@ -46,5 +107,15 @@
                 transform: rotate(-45deg);
             }
         }
+    }
+}
+
+@media (max-width: 750px) {
+    .landing__content {
+        width: 100vw;
+    }
+
+    .landing__cover {
+        width: 80%;
     }
 }

@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import '../../sass/_landing-page.scss'
 
+import orare from '../../images/covers/albums/orare.jpg'
+
 const LandingPage = () => {
     const [ close, doClose ] = useState(false)
 
@@ -11,7 +13,13 @@ const LandingPage = () => {
                 <div className="close__bar" />
             </div>
             <div className="landing__content">
-                <h1>This is the landing page</h1>
+                <div className="landing__cover">
+                    <img src={orare} alt="Young Planet x Downtown Dawson - Orare" />
+                </div>
+                <div className="landing__info">
+                    <h1>Available for Stream / Download</h1>
+                    <button><a href="http://smarturl.it/orare" target="_blank">Listen Here</a></button>
+                </div>
             </div>
         </div>
     )
