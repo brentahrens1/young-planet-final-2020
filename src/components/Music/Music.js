@@ -27,8 +27,8 @@ const Music = () => {
             <div className="music__grid">
                 {
                     albumRoutes.map((route, idx) => 
-                        <div className={showAlbum ? "music__album-covers" : "hide"}>
-                            <img key={idx} src={route.img} alt={route.title} />
+                        <div key={idx} className={showAlbum ? "music__album-covers" : "hide"}>
+                            <img src={route.img} alt={route.title} />
                                 <div className={showAlbum ? "music__album-links" : "hide"}>
                                     <ul>
                                         <li><a href={route.apple} target="_blank" rel="noopener noreferrer">Apple Music</a></li>
@@ -43,8 +43,8 @@ const Music = () => {
             <div className="music__grid">
                 {
                     singleRoutes.map((route, idx) => 
-                        <div className={showSingle ? "music__single-covers" : "hide"}>
-                            <img key={idx} src={route.img} alt={route.title} />
+                        <div key={idx} className={showSingle ? "music__single-covers" : "hide"}>
+                            <img src={route.img} alt={route.title} />
                             <div className={showSingle ? "music__single-links" : "hide"}>
                                 <ul>
                                     <li><a href={route.soundcloud} target="_blank" rel="noopener noreferrer">Soundcloud</a></li>

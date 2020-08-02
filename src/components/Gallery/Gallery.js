@@ -35,7 +35,7 @@ const Gallery = () => {
                     <img src={staircase} alt="Chosen Few Video Shoot" />
                 </div>
                 <div className="gallery__image seven">
-                    <img src={stoop} alt="Young Planet Photo Shoot" />
+                    <img src={stoop} alt="Young Planet Sunset Park Brooklyn" />
                 </div>
                 <div className="gallery__image eight">
                     <img src={studio} alt="Young Planet in the studio" />

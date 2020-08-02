@@ -19,8 +19,8 @@ const LandingPage = () => {
                     <img src={orare} alt="Young Planet x Downtown Dawson - Orare" />
                 </div>
                 <div className="landing__info">
-                    <h1>Available for Stream / Download</h1>
-                    <button><a href="http://smarturl.it/orare" target="_blank">Listen Here</a></button>
+                    <h3>Available for Stream / Download</h3>
+                    <button><a href="http://smarturl.it/orare" target="_blank" rel="noopener noreferrer">Listen Here</a></button>
                     <button><Link to="/">Enter full site</Link></button>
                 </div>
             </div>
