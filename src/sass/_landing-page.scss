@@ -9,6 +9,11 @@
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: scroll;
 
     &.hide {
         display: none;
@@ -73,12 +78,8 @@
     }
 
     &__content {
-        margin-top: 1rem;
+        margin-top: 5rem;
         width: 60%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
 
         h3 {
             font-size: 1.4rem;
@@ -121,5 +122,12 @@
 
     .landing__cover {
         width: 80%;
+    }
+}
+
+@media (max-width: 400px) {
+    .landing__content {
+        width: 90vw;
+        margin-top: 10rem;
     }
 }
