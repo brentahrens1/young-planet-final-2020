@@ -37,6 +37,7 @@
             font-weight: 700;
             text-transform: uppercase;
             z-index: 999;
+            margin-bottom: 1rem;
 
             a:link, a:visited {
                 color: #000;
@@ -96,7 +97,7 @@
             position: absolute;
             left: 0;
             width: 40px;
-            height: 3px;
+            height: 5px;
             background: #000;
 
             &:nth-child(1) {
