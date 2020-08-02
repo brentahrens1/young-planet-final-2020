@@ -15,8 +15,8 @@ const Homepage = () => {
                 </div>
                 <div className="home__static-content">
                     <h1>Latest Release</h1>
-                    <h4>Available now on all platforms for stream / download</h4>
-                    <h2><a href="#">Listen Now</a></h2>
+                    <h4>Available now for stream / download</h4>
+                    <h2><a href="http://smarturl.it/orare" target="_blank">Listen Now</a></h2>
                 </div>
             </div>
             <div className="home__section home__parallax home__banner2"></div>
