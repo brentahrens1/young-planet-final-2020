@@ -45,6 +45,7 @@ $desktop: 1001px;
     &__list {
         width: 35%;
         text-transform: uppercase;
+        font-weight: 700;
         display: flex;
         flex-direction: row;
         justify-content: space-around;

@@ -39,13 +39,31 @@
         }
 
         .footer__list-item {
-            margin-bottom: .5rem;
+            margin-bottom: .9rem;
         }
 
         a:link, a:visited {
+            position: relative;
+            font-weight: 700;
+            display: block;
             color: #fff;
             font-size: 1.1rem;
             margin-bottom: .5rem;
+        }
+
+        a:link::after, a:visited::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2.5px;
+            position: absolute;
+            bottom: -.3rem;
+            background: #fff;
+            transition: width .30s ease-in-out;
+        }
+
+        a:link:hover::after, a:visited:hover::after {
+            width: 100%;
         }
     }
 

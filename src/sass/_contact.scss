@@ -21,7 +21,24 @@
         flex-direction: row;
 
         a:link, a:visited {
+            position: relative;
             color: #000;
+            font-weight: 700;
+        }
+
+        a:link::after, a:visited::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2.5px;
+            position: absolute;
+            bottom: -.3rem;
+            background: #000;
+            transition: width .30s ease-in-out;
+        }
+
+        a:link:hover::after, a:visited:hover::after {
+            width: 100%;
         }
 
         .contact__card-image {
