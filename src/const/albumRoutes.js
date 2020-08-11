@@ -20,25 +20,24 @@ export const albumRoutes = [
         soundcloud: "https://soundcloud.com/spinyoungplanet/sets/all-our-lives-dreaming"
     },
     {
-        title: "Snow Ocean",
-        img: snowOcean,
-        spotify: "#",
-        apple: "#",
-        soundcloud: "#"
-    },
-    {
-        title: "Ludwig Can You Hear Me?",
-        img: lcyhm,
-        spotify: "#",
-        apple: "#",
-        soundcloud: "#"
-    },
-    {
         title: "New Fast Automatic",
         img: nfa,
         spotify: "https://open.spotify.com/album/4Cu7DRV91hM8jsdennnLKG?si=OV_YctnaTUG2Q6TrQUocTQ",
         apple: "https://music.apple.com/us/album/new-fast-automatic/1286930847",
         soundcloud: "https://soundcloud.com/spinyoungplanet/sets/new-fast-automatic"
     },
-    
+    {
+        title: "Snow Ocean",
+        img: snowOcean,
+        spotify: "",
+        apple: "",
+        soundcloud: "https://soundcloud.com/spinyoungplanet/sets/snowocean"
+    },
+    {
+        title: "Ludwig Can You Hear Me?",
+        img: lcyhm,
+        spotify: "",
+        apple: "",
+        soundcloud: "https://soundcloud.com/spinyoungplanet/sets/ludwig-can-you-hear-me"
+    },
 ]

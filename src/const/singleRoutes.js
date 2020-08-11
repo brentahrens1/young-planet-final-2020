@@ -9,59 +9,59 @@ import theseFeelings from '../images/covers/singles/these-feelings.jpg'
 
 export const singleRoutes = [
     {
-        title: "11.9.16",
-        img: eleven,
-        spotify: "#",
-        apple: "#",
-        soundcloud: "https://soundcloud.com/spinyoungplanet/11-9-16yp"
+        title: "Celebrate These Moments",
+        img: ctm,
+        spotify: "",
+        apple: "",
+        soundcloud: "https://soundcloud.com/spinyoungplanet/celebrate-these-moments"
     },
     {
         title: "Chosen Few",
         img: chosenFew,
-        spotify: "#",
-        apple: "#",
+        spotify: "",
+        apple: "",
         soundcloud: "https://soundcloud.com/spinyoungplanet/chosen-few?in=spinyoungplanet/sets/young-planet-1"
-    },
-    {
-        title: "Celebrate These Moments",
-        img: ctm,
-        spotify: "#",
-        apple: "#",
-        soundcloud: "https://soundcloud.com/spinyoungplanet/celebrate-these-moments"
-    },
-    {
-        title: "Fighting Gravity",
-        img: fightingGravity,
-        spotify: "#",
-        apple: "#",
-        soundcloud: "https://soundcloud.com/spinyoungplanet/fighting-gravity"
     },
     {
         title: "Glow",
         img: glow,
-        spotify: "#",
-        apple: "#",
+        spotify: "",
+        apple: "",
         soundcloud: "https://soundcloud.com/spinyoungplanet/glow"
+    },
+    {
+        title: "These Feelings",
+        img: theseFeelings,
+        spotify: "",
+        apple: "",
+        soundcloud: "https://soundcloud.com/spinyoungplanet/these-feelings"
+    },
+    {
+        title: "11.9.16",
+        img: eleven,
+        spotify: "",
+        apple: "",
+        soundcloud: "https://soundcloud.com/spinyoungplanet/11-9-16yp"
+    },
+    {
+        title: "Fighting Gravity",
+        img: fightingGravity,
+        spotify: "",
+        apple: "",
+        soundcloud: "https://soundcloud.com/spinyoungplanet/fighting-gravity"
     },
     {
         title: "Hardwood Classic",
         img: hardwoodClassic,
-        spotify: "#",
-        apple: "#",
+        spotify: "",
+        apple: "",
         soundcloud: "https://soundcloud.com/spinyoungplanet/hardwoodclassic"
     },
     {
         title: "Point Of View",
         img: pointOfView,
-        spotify: "#",
-        apple: "#",
+        spotify: "",
+        apple: "",
         soundcloud: "https://soundcloud.com/spinyoungplanet/point-of-view"
-    },
-    {
-        title: "These Feelings",
-        img: theseFeelings,
-        spotify: "#",
-        apple: "#",
-        soundcloud: "https://soundcloud.com/spinyoungplanet/these-feelings"
     },
 ]

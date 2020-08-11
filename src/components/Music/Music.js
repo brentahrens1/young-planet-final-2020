@@ -31,9 +31,9 @@ const Music = () => {
                             <img src={route.img} alt={route.title} />
                                 <div className={showAlbum ? "music__album-links" : "hide"}>
                                     <ul>
-                                        <li><a href={route.apple} target="_blank" rel="noopener noreferrer">Apple Music</a></li>
-                                        <li><a href={route.spotify} target="_blank" rel="noopener noreferrer">Spotify</a></li>
-                                        <li><a href={route.soundcloud} target="_blank" rel="noopener noreferrer">Soundcloud</a></li>
+                <li><a href={route.apple} target="_blank" rel="noopener noreferrer">{route.apple != '' ? 'Apple' : ''}</a></li>
+                <li><a href={route.spotify} target="_blank" rel="noopener noreferrer">{route.spotify != '' ? 'Spotify' : ''}</a></li>
+                <li><a href={route.soundcloud} target="_blank" rel="noopener noreferrer">{route.soundcloud != '' ? 'Soundcloud' : ''}</a></li>
                                     </ul>
                                 </div>     
                         </div>
@@ -47,7 +47,9 @@ const Music = () => {
                             <img src={route.img} alt={route.title} />
                             <div className={showSingle ? "music__single-links" : "hide"}>
                                 <ul>
-                                    <li><a href={route.soundcloud} target="_blank" rel="noopener noreferrer">Soundcloud</a></li>
+                                <li><a href={route.apple} target="_blank" rel="noopener noreferrer">{route.apple != '' ? 'Apple' : ''}</a></li>
+                                <li><a href={route.spotify} target="_blank" rel="noopener noreferrer">{route.spotify != '' ? 'Spotify' : ''}</a></li>
+                                <li><a href={route.soundcloud} target="_blank" rel="noopener noreferrer">{route.soundcloud != '' ? 'Soundcloud' : ''}</a></li>
                                 </ul>
                             </div>  
                         </div>
